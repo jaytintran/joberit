@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Mock Interview System
 
-## Getting Started
+## 🚀 Overview
 
-First, run the development server:
+An AI-powered mock interview system designed to help developers practice technical interviews in real-time. Built with **Next.js, Tailwind CSS, Vapi, Firebase, and OpenAI**, this project delivers interactive coding and behavioral interview simulations using **free-tier tools**.
+
+📍 [Figma Design](https://www.figma.com/design/fQwML51hBD6NRdXK08fcvP/Landit---AI-Interview-Platform?node-id=2-2&t=f3C4pzDSqSAlTXDA-1)
+
+## ✨ Features
+
+- **AI-driven mock interviews** (DSA, system design, behavioral questions)
+- **Live voice interaction** using **Vapi** (OpenAI's Voice API alternative)
+- **Code execution & evaluation** with built-in IDE
+- **Firebase authentication & database for session tracking**
+- **Next.js serverless functions for backend logic**
+- **Tailwind-powered UI for a sleek, fast interface**
+
+## 🛠 Tech Stack
+
+- **Frontend**: TypeScript, React, Next.js, Tailwind CSS, Shadcn UI, Next.js App Router
+- **AI & Voice API**: Vapi (free alternative to OpenAI's Voice API)
+- **Authentication & DB**:
+- **Backend Logic**: Next.js API Routes
+- **Form Handling & Types Valdation**: Zod, React Hook Form
+
+## 📦 Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone the repo
+git clone <https://github.com/yourusername/ai-mock-interview.git>
+cd ai-mock-interview
+
+# Install dependencies
+yarn install  # or npm install
+
+# Set up environment variables (Firebase, Vapi API keys)
+cp .env.example .env.local
+# Fill in .env.local with your credentials
+
+# Start the development server
+yarn dev  # or npm run dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎯 Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Sign in** using Firebase Authentication (Google/Auth provider)
+2. **Choose interview type** (DSA, system design, or behavioral)
+3. **Start the interview** and interact with AI in real-time via voice or text
+4. **Receive feedback** on responses & solutions
+5. **Track progress** in Firebase Firestore
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🏗 Roadmap
 
-## Learn More
+- [ ] Improve AI response grading
+- [ ] Add multiple coding question formats
+- [ ] Support video-based mock interviews
+- [ ] Generate detailed interview reports
 
-To learn more about Next.js, take a look at the following resources:
+## 🤝 Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Pull requests are welcome! Feel free to open an issue for suggestions or improvements.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📜 License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT License. Feel free to use and modify!
