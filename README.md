@@ -27,8 +27,8 @@ An AI-powered mock interview system designed to help developers practice technic
 
 ```bash
 # Clone the repo
-git clone <https://github.com/yourusername/ai-mock-interview.git>
-cd ai-mock-interview
+git clone <https://github.com/jaytintran/joberit.git>
+cd joberit
 
 # Install dependencies
 yarn install  # or npm install
