@@ -1,14 +1,19 @@
 /* 
-  This layout is for all routes that have a navigation bar, except authentication pages.
+  This is the big mother root layout wthat wraps the (root), (auth), and everything.
 */
 
 import type { Metadata } from "next";
-import { Mona_Sans } from "next/font/google";
+import { Mona_Sans, Teko } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
 
 const monaSans = Mona_Sans({
 	variable: "--font-mona-sans",
+	subsets: ["latin"],
+});
+
+const tekoSans = Teko({
+	variable: "--font-teko",
 	subsets: ["latin"],
 });
 
@@ -24,7 +29,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" className="dark">
-			<body className={`${monaSans.variable} pattern`}>
+			<body className={`${monaSans.variable} bg-pattern`}>
 				{children}
 				<Toaster />
 			</body>
