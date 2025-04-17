@@ -3,7 +3,7 @@
 */
 
 import type { Metadata } from "next";
-import { Mona_Sans, Teko } from "next/font/google";
+import { Mona_Sans } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
 
@@ -12,10 +12,10 @@ const monaSans = Mona_Sans({
 	subsets: ["latin"],
 });
 
-const tekoSans = Teko({
-	variable: "--font-teko",
-	subsets: ["latin"],
-});
+// const tekoSans = Teko({
+// 	variable: "--font-teko",
+// 	subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
 	title: "Joberit",
