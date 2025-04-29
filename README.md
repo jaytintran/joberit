@@ -18,9 +18,9 @@ An AI-powered mock interview system designed to help developers practice technic
 ## 🛠 Tech Stack
 
 - **Frontend**: TypeScript, React, Next.js, Tailwind CSS, Shadcn UI, Next.js App Router
+- **Backend**: , Next.js API Routes
 - **AI & Voice API**: Vapi (free alternative to OpenAI's Voice API)
-- **Authentication & DB**:
-- **Backend Logic**: Next.js API Routes
+- **Authentication & Database**: Firebase (Client SDK, Admin SDK, Server Actions, Firestore, Cloud Storage, Authentication)
 - **Form Handling & Types Valdation**: Zod, React Hook Form
 
 ## 📦 Installation
